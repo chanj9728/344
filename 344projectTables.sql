@@ -317,29 +317,53 @@ CONSTRAINT pro_stuID_fk FOREIGN KEY (stuID) REFERENCES stu(stuID));
 
 --INSERT STATEMENTS
 --PERSON
-INSERT INTO per 
-  VALUES (3000000001, 'Noah', 'Wetzel','James');
+INSERT INTO pers 
+  VALUES (300001, 'Noah', 'Wetzel','James');
   
-INSERT INTO per 
-  VALUES (3000000002, 'Jordan', 'Jansen','Fredrick'); 
+INSERT INTO pers
+  VALUES (300002, 'Jordan', 'Jansen','Fredrick'); 
   
-INSERT INTO per 
-  VALUES (3000000003, 'Ian', 'Wetzel','Charles');
+INSERT INTO pers 
+  VALUES (300003, 'Ian', 'Wetzel','Charles');
   
-INSERT INTO per 
-  VALUES (3000000004, 'Justin', 'Lorentz','Allen');  
+INSERT INTO pers 
+  VALUES (300004, 'Justin', 'Lorentz','Allen');  
   
-INSERT INTO per 
-  VALUES (3000000005, 'Rachel', 'Stout','Marie');
+INSERT INTO pers 
+  VALUES (300005, 'Rachel', 'Stout','Marie');
   
-INSERT INTO per 
-  VALUES (3000000006, 'Erin', 'Wetzel','Charlene');
+INSERT INTO pers 
+  VALUES (300006, 'Erin', 'Wetzel','Charlene');
 
-INSERT INTO per 
-  VALUES (3000000007, 'Sunny', 'Chen',' ');
+INSERT INTO pers 
+  VALUES (300007, 'Sunny', '', 'Chen');
   
-INSERT INTO per 
-  VALUES (3000000008, 'Jacob', 'Maurer','Peter');
+INSERT INTO pers 
+  VALUES (300008, 'Jacob', 'Maurer','Peter');
+
+INSERT INTO pers 
+  VALUES (300009, 'Yong Sheng', '', 'Lai');
+
+INSERT INTO pers 
+  VALUES (300010, 'Mark', 'Smith', 'Brewer');
+
+INSERT INTO pers 
+  VALUES (300011, 'Sarah', 'Adam', 'Lee');
+
+INSERT INTO pers 
+  VALUES (300012, 'Patricia', 'Jacobsen' ,'Pweter');
+
+INSERT INTO pers 
+  VALUES (300013, 'Adam', 'Martin' ,'Jake');
+
+INSERT INTO pers 
+  VALUES (300014, 'Eli', '','Behling');
+
+INSERT INTO pers 
+  VALUES (300015, 'Sam', 'Paul','Smith');
+
+INSERT INTO pers 
+  VALUES (300016, 'Sandy', '','Wong');
   
 --DEMOGRAPHIC 
 
