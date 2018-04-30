@@ -457,4 +457,27 @@ INSERT INTO stu
 INSERT INTO stu
   VALUES (2002, 6002, 'Freshman', 'N', 'N', 'Would like to see extra work on sciences', 'N', 'Science', 7002);  
 
+--EMERGENCY CONTACT
+
+--INSERT EMERGENCY CONTACT
+INSERT INTO emg
+	VALUES (6900010, 300001, 'Brother', 'Y', 'Y', 'N');
+
+INSERT INTO emg
+	VALUES (6900011, 300002, Friend, 'N', 'Y', 'N');
+
+INSERT INTO emg
+	VALUES (6900012, 300003, Colleague, 'Y', 'N', 'Y');
+
+INSERT INTO emg
+	VALUES (6900013, 300004, Cousin, 'Y', 'Y', 'N');
+
+INSERT INTO emg
+	VALUES (6900014, 300005, Sister, 'Y', 'N', 'Y');
+
+INSERT INTO emg
+	VALUES (6900015, 300006, Brother, 'N', 'N', 'Y');
+
+INSERT INTO emg
+	VALUES (6900016, 300007, Wife, 'Y', 'Y', 'N');
 
