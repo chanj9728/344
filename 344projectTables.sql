@@ -139,7 +139,7 @@ CONSTRAINT medin_stuID_fk FOREIGN KEY (stuID) REFERENCES stu(stuID));
 -- ADDRESS TABLE   
 CREATE TABLE addr (
 addrID NUMBER (10),
-addrstreet VARCHAR2 (35) NOT NULL,
+addrstreet VARCHAR2 (35) NOT NULL,     5001, 'Niagara', 'Eau Claire', 54703
 addrcity VARCHAR2 (35) NOT NULL,  
 addrzip NUMBER (5) NOT NULL,  
   
@@ -303,7 +303,7 @@ CONSTRAINT pro_stuID_fk FOREIGN KEY (stuID) REFERENCES stu(stuID));
 
 
 --INSERT STATEMENTS
-
+--PERSON
 INSERT INTO per 
   VALUES (3000000001, 'Noah', 'Wetzel','James');
   
@@ -407,4 +407,28 @@ INSERT INTO phn
   VALUES ('10008', 'C', '1', '715', 7785656) 
   
   
+--ADDRESS
+INSERT INTO addr
+  VALUES (5001, 'Niagara', 'Eau Claire', 54703);
   
+INSERT INTO addr
+  VALUES (5002, 'State', 'Madison', 53703);
+  
+INSERT INTO addr
+  VALUES (5003, 'Sunset', 'Neenah', 54956);
+  
+INSERT INTO addr
+  VALUES (5004, 'Allen', 'Chippewa Falls', 54729);  
+
+INSERT INTO addr
+  VALUES (5005, 'Gilbert', 'Eau Claire', 54701);
+  
+INSERT INTO addr
+  VALUES (5006, 'Hartford', 'Milwaukee', 53211); 
+  
+INSERT INTO addr
+  VALUES (5007, 'Gartfield', 'Eau Claire', 54701);
+  
+INSERT INTO addr
+  VALUES (5008, 'University', 'Eau Claire', 54701);
+   
