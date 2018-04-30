@@ -383,28 +383,28 @@ INSERT INTO email
 --PHONE DO WE NEED TO ADD PERSON ID?? 
 
 INSERT INTO phn
-  VALUES ('10001', 'C', '1', '920', '8583994') --Fix data type in create table
+  VALUES ('10001', 'C', '1', '920', 8583994) --Fix data type in create table
   
 INSERT INTO phn
-  VALUES ('10002', 'C', '1', '715', '7652134')  
+  VALUES ('10002', 'C', '1', '715', 7652134)  
   
 INSERT INTO phn
-  VALUES ('10003', 'C', '1', '920', '4562177')  
+  VALUES ('10003', 'C', '1', '920', 4562177)  
   
 INSERT INTO phn
-  VALUES ('10004', 'W', '1', '414', '8865432') 
+  VALUES ('10004', 'W', '1', '414', 8865432) 
   
 INSERT INTO phn
-  VALUES ('10005', 'C', '1', '952', '7775544') 
+  VALUES ('10005', 'C', '1', '952', 7775544) 
   
 INSERT INTO phn
-  VALUES ('10006', 'W', '1', '920', '3435612')  
+  VALUES ('10006', 'W', '1', '920', 3435612)  
   
 INSERT INTO phn
-  VALUES ('10007', 'C', '1', '920', '8583994') 
+  VALUES ('10007', 'C', '1', '920', 8583994) 
   
 INSERT INTO phn
-  VALUES ('10008', 'C', '1', '715', '7785656') 
+  VALUES ('10008', 'C', '1', '715', 7785656) 
   
   
   
