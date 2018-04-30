@@ -69,7 +69,7 @@ CONSTRAINT hos_stuID_fk FOREIGN KEY (stuID) REFERENCES stu(stuID));
 -- STUDENT TABLE
 CREATE TABLE stu (                          
 stuID NUMBER (10),
-stuorgID NUMBER (10) NOT NULL, --ORGANIZATON ID
+orgID NUMBER (10) NOT NULL, --ORGANIZATON ID
 stuyr VARCHAR2 (35) NOT NULL, -- YEAR IN SCHOOL (JUNIOR, SENIOR, ETC)  
 stulunch VARCHAR2 (1) NOT NULL, -- LUNCH
 sturet VARCHAR2 (1) NOT NULL,   -- RETAINED (CHECK)
@@ -81,8 +81,8 @@ stuserviceID VARCHA2 (35) NOT NULL,--CHECK THIS
   
 CONSTRAINT stu_perID_pk PRIMARY KEY(perID),
 CONSTRAINT stu_perID_fk FOREIGN KEY (perID) REFERENCES per(perID),
-CONSTRAINT stu_servID_fk FOREIGN KEY (servID) REFERENCES serv(servID)); -- MAKE THIS TABLE
-
+CONSTRAINT stu_servID_fk FOREIGN KEY (servID) REFERENCES serv(servID) -- MAKE THIS TABLE
+CONSTRAINT stu_orgID_fk FOREIGN KEY (orgID) REFERENCES org(orgID));
 -- EMERGENCY CONTACT TABLE
 CREATE TABLE par (
 stuID NUMBER (10),
@@ -316,7 +316,11 @@ prospec VARCHAR2 (35) NOT NULL,
 CONSTRAINT pro_pk PRIMARY KEY (proID)
 CONSTRAINT pro_stuID_fk FOREIGN KEY (stuID) REFERENCES stu(stuID));
 
+--ORGANIZATION TABLE
 
+CREATE TABLE org (
+orgID NUMBER (10),
+	
 
 --INSERT STATEMENTS
 --PERSON
@@ -367,8 +371,21 @@ INSERT INTO pers
 
 INSERT INTO pers 
   VALUES (5016, 'Sandy', '','Wong');
-
   
+INSERT INTO pers 
+  VALUES (5017, 'John', 'Jacobs','James');
+  
+INSERT INTO pers 
+  VALUES (5018, 'Adam', 'Seth','Johnson');
+  
+INSERT INTO pers 
+  VALUES (5019, 'Sam', 'David','Heath');
+  
+INSERT INTO pers 
+  VALUES (5020, 'Samantha', 'Erin','Dunbar');
+
+INSERT INTO pers 
+  VALUES (5021, 'Eli', '','Manning');
 --DEMOGRAPHIC 
 
 INSERT INTO dem
