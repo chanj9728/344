@@ -26,7 +26,7 @@ DROP TABLE pro CASCADE CONSTRAINTS:
 
 --PERSON TABLE
 CREATE TABLE per (
-perID VARCHAR2(35),
+perID NUMBER(10), --CHANGE NUMBER AMOUNT
 perfname VARCHAR2(35) NOT NULL,
 perlname VARCHAR2(35) NOT NULL,
 permname VARCHAR2 (35),--NULLABLE BECAUSE SOME MIGHT NOT LIST A MIDDLE NAME. 
@@ -44,7 +44,7 @@ CONSTRAINT dem_demID_fk FOREIGN KEY (stuID) REFERENCES stu(stuID));
 
 --EMAIL TABLE
 CREATE TABLE email (
-emailID NUMBER (10),
+emailID VARCHAR2 (35),
 emailus VARCHAR2 (20) NOT NULL,
 emaildom VARCHAR2 (20)NOT NULL,
   
@@ -55,7 +55,7 @@ CONSTRAINT email_emailID_fk FOREIGN KEY (emailID) REFERENCES email(emailID));
 CREATE TABLE hos (
 stuID NUMBER (10),
 hosID NUMBER (10)NOT NULL,
-hosname VARCHAR2 (35) NOT NULL,
+hosname VARCHAR2 (35) NOT NULL,                             
 hosprim VARCHAR2 (1) NOT NULL, --PRIMARY (Y/N)  
 hosphn NUMBER (10) NOT NULL, --PHONE NUMBER  
 
@@ -64,7 +64,7 @@ CONSTRAINT hos_stuID_fk FOREIGN KEY (stuID) REFERENCES stu(stuID)
 CONSTRAINT hos_stuID_fk FOREIGN KEY (stuID) REFERENCES stu(stuID));
   
 -- STUDENT TABLE
-CREATE TABLE stu (
+CREATE TABLE stu (                          
 stuID NUMBER (10),
 stuorgID NUMBER (10) NOT NULL, --ORGANIZATON ID
 stuyr VARCHAR2 (35) NOT NULL, -- YEAR IN SCHOOL (JUNIOR, SENIOR, ETC)  
@@ -432,3 +432,17 @@ INSERT INTO addr
 INSERT INTO addr
   VALUES (5008, 'University', 'Eau Claire', 54701);
    
+--HOSPITAL
+
+INSERT INTO hos 
+  VALUES (stuID, hosID, hosname, hosprimary?, hosphn)
+  
+--STUDENT (stuID,stuorgID, student year inschool jun sen, student lunch y/n, student retained, stu grade comments, stu grades sat?, stu homework,stuservID)
+INSERT INTO stu
+  VALUES (2001, 6001, 'Junior', 'Y', 'N', ' ', 'Y', 'Math', 7001);
+  
+INSERT INTO stu
+  VALUES (2002, 6002, 'Freshman', 'N', 'N', 'Would like to see extra work on sciences', 'N', 'Science', 7002);  
+
+
+
