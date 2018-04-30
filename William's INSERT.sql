@@ -28,71 +28,71 @@ CONSTRAINT emg_person_fk FOREIGN KEY (emgid) REFERENCES pers (persid));
 /* INSERT DATA INTO TABLES */
 -- INSERT PERSON TABLE
 INSERT INTO pers 
-  VALUES (300001, 'Noah', 'Wetzel','James');
+  VALUES (5001, 'Noah', 'Wetzel','James');
   
 INSERT INTO pers
-  VALUES (300002, 'Jordan', 'Jansen','Fredrick'); 
+  VALUES (5002, 'Jordan', 'Jansen','Fredrick'); 
   
 INSERT INTO pers 
-  VALUES (300003, 'Ian', 'Wetzel','Charles');
+  VALUES (5003, 'Ian', 'Wetzel','Charles');
   
 INSERT INTO pers 
-  VALUES (300004, 'Justin', 'Lorentz','Allen');  
+  VALUES (5004, 'Justin', 'Lorentz','Allen');  
   
 INSERT INTO pers 
-  VALUES (300005, 'Rachel', 'Stout','Marie');
+  VALUES (5005, 'Rachel', 'Stout','Marie');
   
 INSERT INTO pers 
-  VALUES (300006, 'Erin', 'Wetzel','Charlene');
+  VALUES (5006, 'Erin', 'Wetzel','Charlene');
 
 INSERT INTO pers 
-  VALUES (300007, 'Sunny', '', 'Chen');
+  VALUES (5007, 'Sunny', '', 'Chen');
   
 INSERT INTO pers 
-  VALUES (300008, 'Jacob', 'Maurer','Peter');
+  VALUES (5008, 'Jacob', 'Maurer','Peter');
 
 INSERT INTO pers 
-  VALUES (300009, 'Yong Sheng', '', 'Lai');
+  VALUES (5009, 'Yong Sheng', '', 'Lai');
 
 INSERT INTO pers 
-  VALUES (300010, 'Mark', 'Smith', 'Brewer');
+  VALUES (5010, 'Mark', 'Smith', 'Brewer');
 
 INSERT INTO pers 
-  VALUES (300011, 'Sarah', 'Adam', 'Lee');
+  VALUES (5011, 'Sarah', 'Adam', 'Lee');
 
 INSERT INTO pers 
-  VALUES (300012, 'Patricia', 'Jacobsen' ,'Pweter');
+  VALUES (5012, 'Patricia', 'Jacobsen' ,'Pweter');
 
 INSERT INTO pers 
-  VALUES (300013, 'Adam', 'Martin' ,'Jake');
+  VALUES (5013, 'Adam', 'Martin' ,'Jake');
 
 INSERT INTO pers 
-  VALUES (300014, 'Eli', '','Behling');
+  VALUES (5014, 'Eli', '','Behling');
 
 INSERT INTO pers 
-  VALUES (300015, 'Sam', 'Paul','Smith');
+  VALUES (5015, 'Sam', 'Paul','Smith');
 
 INSERT INTO pers 
-  VALUES (300016, 'Sandy', '','Wong');
+  VALUES (5016, 'Sandy', '','Wong');
 
 --INSERT EMERGENCY CONTACT
 INSERT INTO emg
-	VALUES (6900010, 300001, 'Brother', 'Y', 'Y', 'N');
+	VALUES (1010, 5001, 'Brother', 'Y', 'Y', 'N');
 
 INSERT INTO emg
-	VALUES (6900011, 300002, Friend, 'N', 'Y', 'N');
+	VALUES (1011, 5002, Friend, 'N', 'Y', 'N');
 
 INSERT INTO emg
-	VALUES (6900012, 300003, Colleague, 'Y', 'N', 'Y');
+	VALUES (1012, 5003, Colleague, 'Y', 'N', 'Y');
 
 INSERT INTO emg
-	VALUES (6900013, 300004, Cousin, 'Y', 'Y', 'N');
+	VALUES (1013, 5004, Cousin, 'Y', 'Y', 'N');
 
 INSERT INTO emg
-	VALUES (6900014, 300005, Sister, 'Y', 'N', 'Y');
+	VALUES (1014, 5005, Sister, 'Y', 'N', 'Y');
 
 INSERT INTO emg
-	VALUES (6900015, 300006, Brother, 'N', 'N', 'Y');
+	VALUES (1015, 5006, Brother, 'N', 'N', 'Y');
 
 INSERT INTO emg
-	VALUES (6900016, 300007, Wife, 'Y', 'Y', 'N');
+	VALUES (1016, 5007, Wife, 'Y', 'Y', 'N');
