@@ -120,7 +120,7 @@ CONSTRAINT serv_servID_fk FOREIGN KEY (servID) REFERENCES serv(servID));
 
 --Income Table
 CREATE TABLE inc (
-perID NUMBER (10),
+perID NUMBER (10),                    
 guardID NUMBER (10),  
 incfamsi NUMBER (10) NOT NULL,  --FAMILY SIZE
 incinc NUMBER (10) NOT NULL, --   FAMILY INCOME
@@ -558,4 +558,27 @@ INSERT INTO emg
 INSERT INTO emg
 	VALUES (1016, 5007, Wife, 'Y', 'Y', 'N');
 
+--Income Table --FIX ID
+INSERT INTO inc 
+VALUES ( ?,5, 59000, N, father);
 
+INSERT INTO inc 
+VALUES ( ?,4, 69000, Y, father);
+
+INSERT INTO inc 
+VALUES ( ?,6, 120000, N,  Both Parents);
+
+INSERT INTO inc 
+VALUES ( ?,2, 88000, N, Mother);
+
+INSERT INTO inc 
+VALUES ( ?,3, 70000, N,  Guardian);
+
+INSERT INTO inc 
+VALUES ( ?,2, 30000, N,  Grandparent);
+
+INSERT INTO inc 
+VALUES ( ?,5, 90000, N,  Foster Parent);
+
+INSERT INTO inc 
+VALUES ( ?,7, 100000, N,  Relative);
