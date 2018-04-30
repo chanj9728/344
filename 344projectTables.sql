@@ -194,7 +194,7 @@ CONSTRAINT mr_pk PRIMARY KEY (stuID));
 --Emergency Contact TABLE 
 CREATE TABLE econ (
 stuID NUMBER (4),
-emgID NUMBER (4),
+emgID NUMBER (4),                                            
 econrel VARCHAR2 (35)NOT NULL, --RELATIONSHIP TO STUDENT  
 econcall VARCHAR2 (1)NOT NULL, --CALL IN CASE OF EMG?
 econauth VARCHAR2 (1) NOT NULL, --AUTHORIZED TO PICKUP 
@@ -456,6 +456,5 @@ INSERT INTO stu
   
 INSERT INTO stu
   VALUES (2002, 6002, 'Freshman', 'N', 'N', 'Would like to see extra work on sciences', 'N', 'Science', 7002);  
-
 
 
