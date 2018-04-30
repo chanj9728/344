@@ -410,8 +410,16 @@ INSERT INTO dem
   VALUES (2007, 'F', 25-APR-1997); -- check date
   
 INSERT INTO dem
-  VALUES (2008, 'M', 28-JUN-1997); 
-  
+  VALUES (2008, 'M', 28-JUN-1945); 
+	
+INSERT INTO dem
+  VALUES (2009, 'M', 30-APR-1992);
+	
+INSERT INTO dem
+  VALUES (2010, 'F', 21-JUL-1992);
+	
+INSERT INTO dem
+  VALUES (2011, 'F', 10-APR-1994);	
   
 --EMAIL  
 INSERT INTO email
@@ -500,9 +508,33 @@ INSERT INTO stu
   VALUES (2001, 6001, 'Junior', 'Y', 'N', ' ', 'Y', 'Math', 7001);
   
 INSERT INTO stu
-  VALUES (2002, 6002, 'Freshman', 'N', 'N', 'Would like to see extra work on sciences', 'N', 'Science', 7002);  
+  VALUES (2002, 6002, 'Freshman', 'N', 'N', 'Would like to see extra work on sciences', 'N', 'Science', 7002); 
+	
+INSERT INTO stu
+  VALUES (2003, 6003, 'Sophmore', 'N', 'Y', 'Would like to see extra time spend on gym/excercise', 'N', 'Gym', 7003); 	
 
---EMERGENCY CONTACT
+INSERT INTO stu
+  VALUES (2004, 6004, 'Senior', 'Y', 'N', ' ', 'Y', ' ', 7004); 
+
+INSERT INTO stu
+  VALUES (2005, 6005, 'Freshman', 'N', 'N', 'Needs extra time with math', 'Y', 'Math', 7005);
+
+INSERT INTO stu
+  VALUES (2006, 6006, 'Freshman', 'N', 'N', 'Would like to see extra time with science', 'N', 'Science', 7006);
+	
+INSERT INTO stu
+  VALUES (2007, 6007, 'Sophmore', 'N', 'Y', '', 'Y', ' ', 7007); 	
+
+INSERT INTO stu
+  VALUES (2008, 6008, 'Junior', 'Y', 'N', 'Needs help with social studies', 'N', 'Social studies', 7008);
+
+INSERT INTO stu
+  VALUES (2009, 6009, 'Freshman', 'N', 'N', '', 'Y', 'Science', 7009);
+
+INSERT INTO stu
+  VALUES (2010, 6010, 'Senior', 'N', 'N', 'Needs help with nutrition education', 'Y', '', 7010);
+
+	
 
 --INSERT EMERGENCY CONTACT
 INSERT INTO emg
