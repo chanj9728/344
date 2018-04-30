@@ -250,7 +250,7 @@ CONSTRAINT empp_perID_pk PRIMARY KEY(perID),
 CONSTRAINT empp_perID_fk FOREIGN KEY (perID) REFERENCES per(perID));
   
   
---Attendance Table
+--Attendance Table                 
 CREATE TABLE att (
 stuID NUMBER (10),
 attdate DATE NOT NULL, --ATTENDANCE DATE
@@ -582,3 +582,26 @@ VALUES ( ?,5, 90000, N,  Foster Parent);
 
 INSERT INTO inc 
 VALUES ( ?,7, 100000, N,  Relative);
+
+	
+--ATTENDANCE TABLE (2001, attendance date, check in date, check out date)
+INSERT INTO att	
+	VALUES (2001, 28-APR-2018, 28-APR-2018, 30-APR-2018);
+	
+INSERT INTO att	
+	VALUES (2002, 17-MAR-2018, 10-MAR-2018, 30-APR-2018);	
+
+INSERT INTO att	
+	VALUES (2003, 04-FEB-2018, 02-JAN-2018, 07-FEB-2018);
+	
+INSERT INTO att	
+	VALUES (2004, 28-OCT-2017, 14-OCT-2017, 30-OCT-2017);	
+	
+INSERT INTO att	
+	VALUES (2005, 13-SEP-2017, 20-AUG-2016, 30-APR-2018);
+	
+INSERT INTO att	
+	VALUES (2006, 22-NOV-2018, 01-NOV-2016, 23-NOV-2017);	
+	
+	
+	
