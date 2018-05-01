@@ -20,7 +20,7 @@ DROP TABLE serv CASCADE CONSTRAINTS;
 
 --PERSON TABLE
 CREATE TABLE per (
-perID VARCHAR2(35),
+perID NUMBER(10), ------------------------------This was previously a VARCHAR2, why? (Jia)
 perfname VARCHAR2(35),
 perlname VARCHAR2(35),
 permname VARCHAR2 (35),
@@ -39,7 +39,7 @@ CONSTRAINT dem_demID_fk FOREIGN KEY (demID) REFERENCES dem(demID));
 --EMAIL TABLE
 CREATE TABLE email (
 emailID NUMBER (10),
-emailus VARCHAR2 (35) NOT NULL,
+emailus VARCHAR2 (35) NOT NULL, -----------------------------This was previously precision 20, I follow the naming guide of 35 precision. (jia) 
 emaildom VARCHAR2 (35)NOT NULL,
   
 CONSTRAINT email_emailID_pk PRIMARY KEY (emailID),
@@ -53,7 +53,7 @@ hosname VARCHAR2 (35) NOT NULL,
 hosprim VARCHAR2 (1) NOT NULL, --PRIMARY (Y/N)  
 CONSTRAINT hos_pk PRIMARY KEY (stuID, hosID), 
 CONSTRAINT hos1_fk FOREIGN KEY (stuID) REFERENCES per(perID),
-CONSTRAINT hos2_fk FOREIGN KEY (hosID) REFERENCES ??????;
+CONSTRAINT hos2_fk FOREIGN KEY (hosID) REFERENCES ??????; -------------------Insert Organization ID datatype (jia)
 
     
 -- STUDENT TABLE
