@@ -121,16 +121,13 @@ CONSTRAINT serv_servID_fk FOREIGN KEY (servID) REFERENCES serv(servID));
 --Income Table
 CREATE TABLE inc (
 perID NUMBER (10),                    
-guardID NUMBER (10),  
 incfamsi NUMBER (10) NOT NULL,  --FAMILY SIZE
 incinc NUMBER (10) NOT NULL, --   FAMILY INCOME
+inclunc VARCHAR2 (1) NOT NULL, -----Reduced Lunch (Y/N)
 incmili VARCHAR2 (1) NOT NULL,  --MILITARY STATUS (Y/N)
-incbran VARCHAR2 (15) NOT NULL, --BRANCH
-inclivew VARCHAR2 (15) NOT NULL,--MEMBER LIVES WITH
    
-CONSTRAINT inc_pk PRIMARY KEY(perID, guardID),
-CONSTRAINT inc_perID_fk FOREIGN KEY (perID) REFERENCES per(perID)  
-CONSTRAINT inc_guardID_fk FOREIGN KEY (guardID) REFERENCES inc(guardID));  
+CONSTRAINT inc_pk PRIMARY KEY(perID),
+CONSTRAINT inc_perID_fk FOREIGN KEY (perID) REFERENCES per(perID);  
   
 --MEDICAL INFO TABLE
 CREATE TABLE medin (
